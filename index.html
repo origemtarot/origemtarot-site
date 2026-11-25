@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Origem Tarot · Tirages de tarot écrits et en vidéo</title>
+<meta name="description" content="Origem Tarot : tirages de tarot écrits et en vidéo, réponses franches et bienveillantes. Consultations à distance, partout en France.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--nuit:#1a1030;--violet:#2c1a4d;--violet-clair:#4a2f78;--or:#d8b46a;--or-clair:#f1dca6;--texte:#efe8f7;--doux:#bfb2d6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--nuit);color:var(--texte);line-height:1.65}
+a{color:var(--or-clair)}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;color:var(--or-clair);line-height:1.15}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:rgba(26,16,48,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(216,180,106,.15)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:1.5rem;color:var(--or);text-decoration:none;letter-spacing:.04em}
+nav ul{list-style:none;display:flex;gap:22px}
+nav ul a{color:var(--doux);text-decoration:none;font-size:.92rem}
+nav ul a:hover{color:var(--or-clair)}
+.hero{text-align:center;padding:110px 0 100px;background:radial-gradient(ellipse at top,var(--violet-clair) 0%,var(--violet) 40%,var(--nuit) 100%)}
+.lune{font-size:3rem;color:var(--or);margin-bottom:18px}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:18px}
+.hero p{max-width:600px;margin:0 auto 34px;color:var(--doux);font-size:1.08rem}
+.btn{display:inline-block;padding:14px 30px;border-radius:999px;background:var(--or);color:var(--nuit);font-weight:600;text-decoration:none;transition:background .2s}
+.btn:hover{background:var(--or-clair)}
+.btn.ghost{background:transparent;color:var(--or-clair);border:1px solid var(--or);margin-left:10px}
+section{padding:84px 0}
+section h2{font-size:2.3rem;text-align:center;margin-bottom:12px}
+.sous{text-align:center;color:var(--doux);max-width:620px;margin:0 auto 48px}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.carte{background:linear-gradient(160deg,var(--violet) 0%,#22143d 100%);border:1px solid rgba(216,180,106,.25);border-radius:18px;padding:30px 26px}
+.carte h3{font-size:1.55rem;margin-bottom:10px}
+.carte p{color:var(--doux);font-size:.96rem}
+.carte .tag{display:inline-block;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--or);margin-bottom:10px}
+.vedette{border-color:var(--or);box-shadow:0 0 40px rgba(216,180,106,.12)}
+.etapes{counter-reset:e;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.etape{padding:24px;border-left:2px solid var(--or)}
+.etape::before{counter-increment:e;content:counter(e);font-family:"Cormorant Garamond",serif;font-size:2.2rem;color:var(--or);display:block;margin-bottom:6px}
+.etape p{color:var(--doux)}
+.alt{background:#20133a}
+.apropos{max-width:680px;margin:0 auto;text-align:center}
+.apropos p{color:var(--doux);margin-bottom:16px;font-size:1.04rem}
+.contact{text-align:center}
+.contact .mail{font-size:1.25rem;display:inline-block;margin:10px 0 26px}
+footer{padding:36px 0;text-align:center;color:#8f82a8;font-size:.82rem;border-top:1px solid rgba(216,180,106,.12)}
+footer p{max-width:720px;margin:0 auto 8px}
+@media (max-width:640px){nav ul{display:none}.btn.ghost{margin:12px 0 0}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">☾ Origem Tarot</a>
+    <ul>
+      <li><a href="#offres">Tirages</a></li>
+      <li><a href="#comment">Comment ça marche</a></li>
+      <li><a href="#apropos">Origem</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="lune">☾ ✦</div>
+    <h1>Les cartes ne mentent pas.<br>Moi non plus.</h1>
+    <p>Des tirages de tarot écrits et en vidéo, avec des réponses claires, franches et bienveillantes. Consultations à distance, où que tu sois.</p>
+    <a class="btn" href="#offres">Découvrir les tirages</a>
+    <a class="btn ghost" href="#contact">Poser ma question</a>
+  </div>
+</header>
+
+<section id="offres">
+  <div class="wrap">
+    <h2>Les tirages</h2>
+    <p class="sous">Choisis le format qui te correspond. Chaque tirage est fait à la main, avec mes propres cartes.</p>
+    <div class="grille">
+      <div class="carte vedette">
+        <span class="tag">✦ Nouveau · Décembre 2026</span>
+        <h3>Ton année 2027</h3>
+        <p>Un tirage de 12 cartes, une pour chaque mois de l'année. Tu reçois un livret personnalisé pour savoir ce qui t'attend en amour, en travail et dans ta vie. Il peut aussi être offert en cadeau.</p>
+      </div>
+      <div class="carte">
+        <span class="tag">Écrit</span>
+        <h3>Tarot par chat</h3>
+        <p>Tu poses ta question par écrit et je te réponds directement, carte par carte. C'est simple, discret et sans appel à passer.</p>
+      </div>
+      <div class="carte">
+        <span class="tag">Vidéo</span>
+        <h3>Tirage en vidéo</h3>
+        <p>Ton tirage filmé sur la table, avec l'interprétation de chaque carte. Tu peux le regarder et le revoir quand tu veux.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="comment" class="alt">
+  <div class="wrap">
+    <h2>Comment ça marche</h2>
+    <p class="sous">Tout se fait à distance, en quelques étapes.</p>
+    <div class="etapes">
+      <div class="etape"><h3>Choisis ton tirage</h3><p>Année 2027, chat ou vidéo, selon ce que tu veux savoir.</p></div>
+      <div class="etape"><h3>Envoie ta question</h3><p>Écris-moi par e-mail avec ta question et ton prénom.</p></div>
+      <div class="etape"><h3>Je tire les cartes</h3><p>Je fais ton tirage avec soin et j'interprète chaque carte.</p></div>
+      <div class="etape"><h3>Reçois ta réponse</h3><p>Par écrit ou en vidéo, directement dans ta boîte mail.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="apropos">
+  <div class="wrap apropos">
+    <h2>Origem</h2>
+    <p>« Origem » veut dire origine. Le tarot aide à revenir à la source de ce que tu vis, à comprendre d'où viennent tes doutes et vers où tu vas.</p>
+    <p>J'ai fait de nombreux tirages sur des sites de voyance. On me disait souvent que j'étais directe. C'est vrai : je te dis ce que les cartes montrent, sans détour, mais toujours avec respect.</p>
+    <p>Basée en ce moment en France, je fais toutes mes consultations à distance.</p>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap contact">
+    <h2>Pose ta question</h2>
+    <p class="sous">Écris-moi pour réserver un tirage ou demander des informations. Je réponds personnellement à chaque message.</p>
+    <a class="mail" href="mailto:origemtarot@gmail.com">origemtarot@gmail.com</a><br>
+    <a class="btn" href="mailto:origemtarot@gmail.com?subject=Demande%20de%20tirage">Réserver mon tirage</a>
+    <p class="sous" style="margin-top:40px;margin-bottom:0">Retrouve aussi Origem Tarot sur YouTube et TikTok : <strong>@origemtarot</strong></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Les tirages de tarot sont proposés à titre de divertissement et d'accompagnement personnel. Ils ne remplacent pas l'avis d'un médecin, d'un avocat ou d'un conseiller financier. Réservé aux personnes majeures.</p>
+    <p>© 2026 Origem Tarot · Micro-entreprise</p>
+  </div>
+</footer>
+
+</body>
+</html>
